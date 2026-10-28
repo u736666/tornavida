@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Company Brain | Kloia</title>
+<style>
+:root{--bg:#fff;--fg:#000;--mute:#555;--line:#000;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#000;--fg:#fff;--mute:#aaa;--line:#fff}}
+:root[data-theme="dark"]{--bg:#000;--fg:#fff;--mute:#aaa;--line:#fff}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 Georgia,"Times New Roman",serif}
+header,main,footer{max-width:760px;margin:0 auto;padding:0 20px}
+nav{padding:20px 0;border-bottom:1px solid var(--line);font:15px/1.4 Arial,Helvetica,sans-serif}
+nav a{margin-right:16px;color:var(--fg)}
+section{padding:44px 0;border-bottom:1px solid var(--line)}
+h1{font-size:38px;line-height:1.15;margin:0 0 16px}
+h2{font-size:27px;line-height:1.2;margin:0 0 12px}
+h3{font-size:18px;margin:0 0 4px}
+p{margin:0 0 14px}
+.lead{font-size:20px}
+.mute{color:var(--mute)}
+a{color:var(--fg)}
+.btn{display:inline-block;border:2px solid var(--line);padding:10px 18px;text-decoration:none;font:700 16px Arial,sans-serif}
+ol{padding-left:22px}li{margin-bottom:8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.box{border:1px solid var(--line);padding:14px 16px}
+.box p{margin:0}
+.wrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:15px}
+th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+details{border-top:1px solid var(--line);padding:12px 0}
+details:last-of-type{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;font-weight:700}
+details p{margin:10px 0 0}
+footer{padding:28px 20px;font-size:14px}
+</style>
+</head>
+<body>
+<header>
+<nav><strong>kloia</strong> &nbsp; <a href="#what">What it is</a><a href="#inside">Inside</a><a href="#how">How it works</a><a href="#aidlc">AI-DLC</a><a href="#faq">FAQ</a></nav>
+</header>
+<main>
+
+<section>
+<p class="mute">Company Brain · the foundation of AI-DLC</p>
+<h1>Your company has a brain. It’s just not plugged in.</h1>
+<p class="lead">AI tools do not know your architecture, your standards or why past decisions were made. Kloia’s Company Brain captures that knowledge once, keeps it current, and feeds it to every AI agent in your delivery lifecycle.</p>
+<p><a class="btn" href="https://www.kloia.com/contact">Book a Discovery Meeting</a></p>
+<p class="mute">AWS Premier Tier Services Partner. Delivering since 2016. 200+ customers.</p>
+</section>
+
+<section>
+<h2>Every company has a brain. Few have written it down.</h2>
+<p>Until it is, three things keep going wrong.</p>
+<div class="grid">
+<div class="box"><h3>Context is retyped daily</h3><p>Teams paste the same standards into prompts, every day.</p></div>
+<div class="box"><h3>Output is unchecked</h3><p>Nobody can show that AI work follows company policy.</p></div>
+<div class="box"><h3>Knowledge walks out</h3><p>The reasoning behind decisions leaves with the people.</p></div>
+</div>
+</section>
+
+<section id="what">
+<h2>What a Company Brain is</h2>
+<p><strong>A permissioned, versioned body of company knowledge that AI agents and people read before doing the work.</strong> Every item has a source, an owner and a verification date.</p>
+<div class="wrap">
+<table>
+<tr><th></th><th>Wiki</th><th>Search or RAG</th><th>Company Brain</th></tr>
+<tr><td>Used</td><td>When someone remembers</td><td>When someone asks</td><td>Before every task</td></tr>
+<tr><td>Keeps the why</td><td>Sometimes</td><td>No</td><td>Dated decision records</td></tr>
+<tr><td>Checks output</td><td>No</td><td>No</td><td>Against written rules</td></tr>
+</table>
+</div>
+</section>
+
+<section id="inside">
+<h2>What goes inside</h2>
+<p>Three kinds of knowledge, kept apart so each stays easy to update.</p>
+<div class="grid">
+<div class="box"><h3>Facts</h3><p>What is true now: target architecture, coding standards, business rules, deprecation lists.</p></div>
+<div class="box"><h3>Decisions</h3><p>Why you chose this way, with a date. Never rewritten, only superseded.</p></div>
+<div class="box"><h3>Playbooks</h3><p>How work is done: releases, incidents, reviews, onboarding.</p></div>
+</div>
+<p style="margin-top:16px">We extract it from what you already have: code, Jira, Confluence, ADRs and runbooks. Nothing is written back to your systems by default.</p>
+</section>
+
+<section id="how">
+<h2>How it works</h2>
+<ol>
+<li><strong>Connect.</strong> Read-only connectors pull from your existing tools.</li>
+<li><strong>Structure.</strong> Knowledge is sorted into facts, decisions and playbooks, and loaded by the type of work.</li>
+<li><strong>Check.</strong> Every AI output is tested against your written rules. Violations are blocked, the rule is cited, and an audit trail is written.</li>
+<li><strong>Improve.</strong> A weekly report shows what was broken or missing. Humans decide what changes.</li>
+</ol>
+</section>
+
+<section id="aidlc">
+<h2>How it fits into AI-DLC</h2>
+<p>The Company Brain is the first layer of <a href="https://www.kloia.com/aidlc">AI-DLC</a>, Kloia’s framework for AI across the delivery lifecycle. The brain holds the knowledge. AI-DLC puts agents on top of it at every phase, from Define to Operate, with people making the decisions that matter.</p>
+<p>You can start with the brain alone, or alongside a modernisation, new build or QA workflow.</p>
+<p><strong>Typical start:</strong> knowledge base in one to two weeks, pilot running in four to six, on one or two lifecycle stages.</p>
+</section>
+
+<section>
+<h2>See where to start</h2>
+<p>A look at your architecture and delivery process. You leave with a view of where to begin, not a quote.</p>
+<p><a class="btn" href="https://www.kloia.com/contact">Talk to an Architect</a></p>
+</section>
+
+<section id="faq">
+<h2>Frequently asked questions</h2>
+<details><summary>How is this different from a wiki or RAG?</summary><p>A wiki is read when someone remembers it, and RAG retrieves text that matches a question. A Company Brain is loaded into the work by default, keeps the reasoning behind decisions, and has its output checked against rules.</p></details>
+<details><summary>Do we have to write everything down first?</summary><p>No. We extract from existing code, tickets, ADRs and documents, and people confirm what matters.</p></details>
+<details><summary>Does it replace Jira, Confluence or GitHub?</summary><p>No. It connects read-only and complements them.</p></details>
+<details><summary>Who stays in control?</summary><p>People. Agents suggest and audit, and critical decisions always go to human review.</p></details>
+<details><summary>Can we use our own or an on-premise model?</summary><p>Yes. It is model-agnostic, including AWS Bedrock, Azure OpenAI and on-premise models.</p></details>
+<details><summary>Is it suitable for regulated sectors?</summary><p>Yes. Audit trails are automatic and human approval is kept throughout.</p></details>
+<details><summary>Is it only for large teams?</summary><p>It creates the most value for engineering teams of fifty or more. A focused starter package exists for smaller teams.</p></details>
+</section>
+
+</main>
+<footer>
+<p>Kloia. <a href="https://www.kloia.com/contact">Contact</a> · <a href="https://www.kloia.com/privacy-policy">Privacy Policy</a></p>
+</footer>
+</body>
+</html>
