@@ -23,12 +23,18 @@ p{margin:0 0 14px}
 a{color:var(--fg)}
 .btn{display:inline-block;border:2px solid var(--line);padding:10px 18px;text-decoration:none;font:700 16px Arial,sans-serif}
 ol{padding-left:22px}li{margin-bottom:8px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
 .box{border:1px solid var(--line);padding:14px 16px}
-.box p{margin:0}
-.wrap{overflow-x:auto}
-table{border-collapse:collapse;width:100%;font-size:15px}
-th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+.box p{margin:0 0 10px}
+.box ul{margin:0;padding-left:18px;font-size:15px}
+.box li{margin-bottom:6px}
+.ask{font-size:14px;margin:0 0 4px}
+svg{display:block;width:100%;height:auto;max-width:560px;margin:0 auto}
+svg text{fill:var(--fg);font:15px Arial,Helvetica,sans-serif}
+svg .l{stroke:var(--fg);stroke-width:1.5;fill:none}
+svg .n{stroke:var(--fg);stroke-width:1.5;fill:var(--bg)}
+figcaption{text-align:center;font-size:14px;margin-top:8px}
+figure{margin:0}
 details{border-top:1px solid var(--line);padding:12px 0}
 details:last-of-type{border-bottom:1px solid var(--line)}
 summary{cursor:pointer;font-weight:700}
@@ -38,84 +44,122 @@ footer{padding:28px 20px;font-size:14px}
 </head>
 <body>
 <header>
-<nav><strong>kloia</strong> &nbsp; <a href="#what">What it is</a><a href="#inside">Inside</a><a href="#how">How it works</a><a href="#aidlc">AI-DLC</a><a href="#faq">FAQ</a></nav>
+<nav><strong>kloia</strong> &nbsp; <a href="#what">What it is</a><a href="#usecases">Use cases</a><a href="#how">How it works</a><a href="#trust">Trust</a><a href="#faq">FAQ</a></nav>
 </header>
 <main>
 
 <section>
-<p class="mute">Company Brain · the foundation of AI-DLC</p>
+<p class="mute">Kloia Company Brain</p>
 <h1>Your company has a brain. It’s just not plugged in.</h1>
-<p class="lead">AI tools do not know your architecture, your standards or why past decisions were made. Kloia’s Company Brain captures that knowledge once, keeps it current, and feeds it to every AI agent in your delivery lifecycle.</p>
-<p><a class="btn" href="https://www.kloia.com/contact">Book a Discovery Meeting</a></p>
-<p class="mute">AWS Premier Tier Services Partner. Delivering since 2016. 200+ customers.</p>
+<p class="lead">Company Brain learns your policies and history, connects to your systems, and answers the questions your teams spend hours on. Under your rules.</p>
+<p class="ask">Ask it:</p>
+<ul><li>“What was our EBITDA last quarter?”</li><li>“What did we deliver for this customer in the past?”</li><li>“How many days of leave do I have left?”</li></ul>
+<p style="margin-top:20px"><a class="btn" href="https://www.kloia.com/contact">Book a Discovery Meeting</a></p>
+</section>
+
+<section>
+<h2>One question. Every system.</h2>
+<p>The brain connects to the places your answers live, finds what is needed, and hands it back ready to use. Read-only, so nothing in those systems changes.</p>
+<figure>
+<svg viewBox="0 0 560 340" role="img" aria-label="Company Brain connected to SAP, HubSpot, Xero, Slack, policies and past projects">
+<g class="l"><line x1="140" y1="40" x2="280" y2="170"/><line x1="140" y1="170" x2="280" y2="170"/><line x1="140" y1="300" x2="280" y2="170"/><line x1="420" y1="40" x2="280" y2="170"/><line x1="420" y1="170" x2="280" y2="170"/><line x1="420" y1="300" x2="280" y2="170"/></g>
+<rect class="n" x="20" y="20" width="120" height="40"/><text x="80" y="45" text-anchor="middle">SAP</text>
+<rect class="n" x="20" y="150" width="120" height="40"/><text x="80" y="175" text-anchor="middle">HubSpot</text>
+<rect class="n" x="20" y="280" width="120" height="40"/><text x="80" y="305" text-anchor="middle">Xero</text>
+<rect class="n" x="420" y="20" width="120" height="40"/><text x="480" y="45" text-anchor="middle">Slack</text>
+<rect class="n" x="420" y="150" width="120" height="40"/><text x="480" y="175" text-anchor="middle">Policies</text>
+<rect class="n" x="420" y="280" width="120" height="40"/><text x="480" y="305" text-anchor="middle">Past projects</text>
+<circle class="n" cx="280" cy="170" r="52"/><text x="280" y="167" text-anchor="middle">Company</text><text x="280" y="187" text-anchor="middle">Brain</text>
+</svg>
+<figcaption>Examples. It connects to the tools you already use.</figcaption>
+</figure>
 </section>
 
 <section>
 <h2>Every company has a brain. Few have written it down.</h2>
-<p>Until it is, three things keep going wrong.</p>
+<p>Until it is, the same things keep happening.</p>
 <div class="grid">
-<div class="box"><h3>Context is retyped daily</h3><p>Teams paste the same standards into prompts, every day.</p></div>
-<div class="box"><h3>Output is unchecked</h3><p>Nobody can show that AI work follows company policy.</p></div>
-<div class="box"><h3>Knowledge walks out</h3><p>The reasoning behind decisions leaves with the people.</p></div>
+<div class="box"><h3>Answers are scattered</h3><p>The number you need sits across a dozen systems, and someone has to pull it together by hand.</p></div>
+<div class="box"><h3>Rules live in documents</h3><p>Policies and approval rules exist, but nobody applies them the same way twice.</p></div>
+<div class="box"><h3>History walks out the door</h3><p>Past projects, customers and decisions are known by a few people, until they leave.</p></div>
 </div>
 </section>
 
 <section id="what">
 <h2>What a Company Brain is</h2>
-<p><strong>A permissioned, versioned body of company knowledge that AI agents and people read before doing the work.</strong> Every item has a source, an owner and a verification date.</p>
-<div class="wrap">
-<table>
-<tr><th></th><th>Wiki</th><th>Search or RAG</th><th>Company Brain</th></tr>
-<tr><td>Used</td><td>When someone remembers</td><td>When someone asks</td><td>Before every task</td></tr>
-<tr><td>Keeps the why</td><td>Sometimes</td><td>No</td><td>Dated decision records</td></tr>
-<tr><td>Checks output</td><td>No</td><td>No</td><td>Against written rules</td></tr>
-</table>
+<p><strong>A Company Brain is an AI that has learned how your company works, and works inside those rules.</strong> It is not a chatbot on top of your files, and it is not a search bar.</p>
+<p>It learns three things:</p>
+<ol>
+<li><strong>Your rules.</strong> Governance rules, internal rules and every policy, in one place.</li>
+<li><strong>Your data.</strong> Pulled from every system that holds it, without moving it or changing it.</li>
+<li><strong>Your history.</strong> Past projects, customers, decisions and results.</li>
+</ol>
+<p>Then it calculates, answers and drafts the way your company would, and shows which rule and which source it used.</p>
+</section>
+
+<section id="usecases">
+<h2>Pick the brain your team needs</h2>
+<p>Each Company Brain is built for one function. More will follow.</p>
+<div class="grid">
+<div class="box"><h3>CFO Brain</h3><p>Financial calculations from every source, under your finance rules.</p>
+<p class="ask">Ask it:</p><ul><li>“What was our EBITDA last quarter?”</li><li>“How did you get that number, and where did it come from?”</li><li>“How much did we spend on contractors this year, by project?”</li></ul></div>
+<div class="box"><h3>CMO Brain</h3><p>Marketing analysis and calculations against your own numbers and guidelines.</p>
+<p class="ask">Ask it:</p><ul><li>“How is this month’s campaign performing against budget?”</li><li>“How much did a new lead cost us last quarter, by channel?”</li><li>“How do I word this announcement so it follows our brand guidelines?”</li></ul></div>
+<div class="box"><h3>Sales Brain</h3><p>Projections and answers grounded in what you have actually sold.</p>
+<p class="ask">Ask it:</p><ul><li>“What did we deliver for this customer in the past? Give me the project details.”</li><li>“How profitable were our last five projects in this sector?”</li><li>“How do I build a sales projection for next quarter?”</li></ul></div>
+<div class="box"><h3>Legal Brain</h3><p>Policy lookups and first drafts based on your own policies and precedent, reviewed by a lawyer.</p>
+<p class="ask">Ask it:</p><ul><li>“How do we handle a liability cap request under our contract policy?”</li><li>“Draft a first version of this NDA using our standard template.”</li><li>“What does our policy say about data retention for this customer?”</li></ul></div>
+<div class="box"><h3>HR Brain</h3><p>Answers for employees, straight from your HR policies and records.</p>
+<p class="ask">Ask it:</p><ul><li>“How many days of leave do I have left?”</li><li>“Can I claim this as an expense, and how do I file it?”</li><li>“What does our sick leave policy say?”</li></ul></div>
 </div>
 </section>
 
-<section id="inside">
-<h2>What goes inside</h2>
-<p>Three kinds of knowledge, kept apart so each stays easy to update.</p>
-<div class="grid">
-<div class="box"><h3>Facts</h3><p>What is true now: target architecture, coding standards, business rules, deprecation lists.</p></div>
-<div class="box"><h3>Decisions</h3><p>Why you chose this way, with a date. Never rewritten, only superseded.</p></div>
-<div class="box"><h3>Playbooks</h3><p>How work is done: releases, incidents, reviews, onboarding.</p></div>
-</div>
-<p style="margin-top:16px">We extract it from what you already have: code, Jira, Confluence, ADRs and runbooks. Nothing is written back to your systems by default.</p>
+<section id="proof">
+<h2>Kloia runs one itself</h2>
+<p>Our own CFO Brain answers finance questions for the Kloia team, drawing on many systems and applying our own rules.</p>
+<p><strong>Last quarter’s EBITDA used to take our finance team three days to pull together from eight systems. Now our CFO asks one question and gets the number, with its sources, in under two minutes.</strong></p>
+<p class="mute">[SAMPLE FIGURES. Replace with real numbers before launch.]</p>
 </section>
 
 <section id="how">
 <h2>How it works</h2>
 <ol>
-<li><strong>Connect.</strong> Read-only connectors pull from your existing tools.</li>
-<li><strong>Structure.</strong> Knowledge is sorted into facts, decisions and playbooks, and loaded by the type of work.</li>
-<li><strong>Check.</strong> Every AI output is tested against your written rules. Violations are blocked, the rule is cited, and an audit trail is written.</li>
-<li><strong>Improve.</strong> A weekly report shows what was broken or missing. Humans decide what changes.</li>
+<li><strong>Learn.</strong> We collect your policies, governance rules and internal rules, and turn them into rules the brain can apply.</li>
+<li><strong>Connect.</strong> Read-only connections to the systems that hold your data. Nothing is changed in them.</li>
+<li><strong>Work.</strong> The brain answers, calculates and drafts, and cites the rule and the source behind each result.</li>
+<li><strong>Approve.</strong> A person reviews anything that matters. The brain proposes, you decide.</li>
 </ol>
 </section>
 
-<section id="aidlc">
-<h2>How it fits into AI-DLC</h2>
-<p>The Company Brain is the first layer of <a href="https://www.kloia.com/aidlc">AI-DLC</a>, Kloia’s framework for AI across the delivery lifecycle. The brain holds the knowledge. AI-DLC puts agents on top of it at every phase, from Define to Operate, with people making the decisions that matter.</p>
-<p>You can start with the brain alone, or alongside a modernisation, new build or QA workflow.</p>
-<p><strong>Typical start:</strong> knowledge base in one to two weeks, pilot running in four to six, on one or two lifecycle stages.</p>
+<section id="trust">
+<h2>Why you can trust the answer</h2>
+<div class="grid">
+<div class="box"><h3>Traceable</h3><p>Every result shows the rule and the data it came from.</p></div>
+<div class="box"><h3>Audited</h3><p>Checks against your policies are recorded automatically.</p></div>
+<div class="box"><h3>You stay in control</h3><p>Important decisions always go to a person for approval.</p></div>
+<div class="box"><h3>Your data stays yours</h3><p>Can run on your own cloud or a private model.</p></div>
+<div class="box"><h3>Same access as the person asking</h3><p>People only see what they are already allowed to see.</p></div>
+<div class="box"><h3>Read-only</h3><p>It looks at your systems. It never changes them.</p></div>
+</div>
 </section>
 
 <section>
-<h2>See where to start</h2>
-<p>A look at your architecture and delivery process. You leave with a view of where to begin, not a quote.</p>
-<p><a class="btn" href="https://www.kloia.com/contact">Talk to an Architect</a></p>
+<h2>Start with one function</h2>
+<p>A short conversation about where your team spends the most time pulling numbers and checking rules. You leave with a view of which brain to build first.</p>
+<p><a class="btn" href="https://www.kloia.com/contact">Talk to Us</a></p>
 </section>
 
 <section id="faq">
 <h2>Frequently asked questions</h2>
-<details><summary>How is this different from a wiki or RAG?</summary><p>A wiki is read when someone remembers it, and RAG retrieves text that matches a question. A Company Brain is loaded into the work by default, keeps the reasoning behind decisions, and has its output checked against rules.</p></details>
-<details><summary>Do we have to write everything down first?</summary><p>No. We extract from existing code, tickets, ADRs and documents, and people confirm what matters.</p></details>
-<details><summary>Does it replace Jira, Confluence or GitHub?</summary><p>No. It connects read-only and complements them.</p></details>
-<details><summary>Who stays in control?</summary><p>People. Agents suggest and audit, and critical decisions always go to human review.</p></details>
-<details><summary>Can we use our own or an on-premise model?</summary><p>Yes. It is model-agnostic, including AWS Bedrock, Azure OpenAI and on-premise models.</p></details>
-<details><summary>Is it suitable for regulated sectors?</summary><p>Yes. Audit trails are automatic and human approval is kept throughout.</p></details>
-<details><summary>Is it only for large teams?</summary><p>It creates the most value for engineering teams of fifty or more. A focused starter package exists for smaller teams.</p></details>
+<details><summary>How much does it cost?</summary><p>[ADD PRICING MODEL: for example, a setup fee plus a monthly fee per brain.]</p></details>
+<details><summary>How long does it take to set up?</summary><p>[ADD TYPICAL TIMELINE for the first brain.]</p></details>
+<details><summary>Is this just a chatbot?</summary><p>No. A chatbot answers from documents. A Company Brain applies your rules, calculates from your live data, drafts in your standards, and shows how it got there.</p></details>
+<details><summary>Do we need an IT team to use it?</summary><p>No. Your team asks in plain language. Kloia handles the connections and setup.</p></details>
+<details><summary>Does it replace our ERP, CRM or other systems?</summary><p>No. It connects to them read-only and leaves them as they are.</p></details>
+<details><summary>Can it be wrong?</summary><p>Any AI can. That is why each result cites its rule and source, and why a person approves anything important.</p></details>
+<details><summary>Who can see what?</summary><p>The brain follows your access rules, so people only see what they are already allowed to see.</p></details>
+<details><summary>Which brain should we start with?</summary><p>Usually the function with the most manual number-pulling or rule-checking. We help you choose in the first conversation.</p></details>
+<details><summary>Can we use our own AI model?</summary><p>Yes. It works with private and on-premise models, so data can stay in your environment.</p></details>
 </section>
 
 </main>
